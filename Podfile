@@ -6,5 +6,5 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'BasicIMAPlayer' do
-	pod 'Brightcove-Player-IMA', '6.8.6' 
+	pod 'Brightcove-Player-IMA' 
 end

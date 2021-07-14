@@ -27,15 +27,6 @@ class VASTViewController: BaseViewController {
         
         let policy = BCOVCuePointProgressPolicy.init(processingCuePoints: .processFinalCuePoint, resumingPlaybackFrom: .fromContentPlayhead, ignoringPreviouslyProcessedCuePoints: false)
         
-        // BCOVIMAAdsRequestPolicy provides two VAST configurations:
-        // `adsRequestPolicyWithVASTAdTagsInCuePointsAndAdsCuePointProgressPolicy` and
-        // `adsRequestPolicyFromCuePointPropertiesWithAdTag:adsCuePointProgressPolicy:`
-        //
-        // Using `adsRequestPolicyWithVASTAdTagsInCuePointsAndAdsCuePointProgressPolicy`
-        // allows you to set a different VAST ad tag URL for each cue point, while using
-        // `adsRequestPolicyFromCuePointPropertiesWithAdTag:adsCuePointProgressPolicy:`
-        // will use the same VAST ad tag URL for each cue point.
-        
         var adsRequestPolicy: BCOVIMAAdsRequestPolicy?
         
         if (useAdTagsInCuePoints) {

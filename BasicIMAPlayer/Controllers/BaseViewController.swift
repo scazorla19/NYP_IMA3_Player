@@ -73,6 +73,7 @@ class BaseViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         self.playerView?.performScreenTransition(with: .full)
+        self.playbackController?.shutter = true
     }
 
     // MARK: - Misc
@@ -159,6 +160,12 @@ extension BaseViewController: BCOVPlaybackControllerDelegate {
         // The events are defined BCOVIMAComponent.h.
         
         let type = lifecycleEvent.eventType
+        
+        // Prevent main content from showing up before the ad
+        
+        if type == kBCOVPlaybackSessionLifecycleEventPlay {
+            self.playbackController?.shutter = false
+        }
         
         if type == kBCOVIMALifecycleEventAdsLoaderLoaded {
             print("ViewController Debug - Ads loaded.")

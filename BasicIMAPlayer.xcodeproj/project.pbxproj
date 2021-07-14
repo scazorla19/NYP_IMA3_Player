@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A9FD98A1BEEBD9AA1911FE1 /* Pods_BasicIMAPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723C626CBBAB1151D26582BA /* Pods_BasicIMAPlayer.framework */; };
-		D6B50AA725B0F2B10019BE84 /* VASTOMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B50AA625B0F2B10019BE84 /* VASTOMViewController.swift */; };
-		E9337C812547297F00BD8A2A /* VMAPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9337C802547297F00BD8A2A /* VMAPViewController.swift */; };
 		E9337C842547298800BD8A2A /* VASTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9337C832547298800BD8A2A /* VASTViewController.swift */; };
 		E93A3D0E217A1D5900F971F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A3D0D217A1D5900F971F8 /* AppDelegate.swift */; };
 		E93A3D10217A1D5900F971F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A3D0F217A1D5900F971F8 /* BaseViewController.swift */; };
@@ -24,8 +22,6 @@
 		40166E9C5B5B0256E7EFBE3F /* Pods-BasicIMAPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicIMAPlayer.release.xcconfig"; path = "Target Support Files/Pods-BasicIMAPlayer/Pods-BasicIMAPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		602A4B9071B57068DC33ECED /* Pods-BasicIMAPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicIMAPlayer.debug.xcconfig"; path = "Target Support Files/Pods-BasicIMAPlayer/Pods-BasicIMAPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		723C626CBBAB1151D26582BA /* Pods_BasicIMAPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicIMAPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6B50AA625B0F2B10019BE84 /* VASTOMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VASTOMViewController.swift; sourceTree = "<group>"; };
-		E9337C802547297F00BD8A2A /* VMAPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMAPViewController.swift; sourceTree = "<group>"; };
 		E9337C832547298800BD8A2A /* VASTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VASTViewController.swift; sourceTree = "<group>"; };
 		E93A3D0A217A1D5900F971F8 /* BasicIMAPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicIMAPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93A3D0D217A1D5900F971F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,9 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E93A3D0F217A1D5900F971F8 /* BaseViewController.swift */,
-				E9337C802547297F00BD8A2A /* VMAPViewController.swift */,
 				E9337C832547298800BD8A2A /* VASTViewController.swift */,
-				D6B50AA625B0F2B10019BE84 /* VASTOMViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,8 +273,6 @@
 			files = (
 				E93A3D10217A1D5900F971F8 /* BaseViewController.swift in Sources */,
 				E9337C842547298800BD8A2A /* VASTViewController.swift in Sources */,
-				D6B50AA725B0F2B10019BE84 /* VASTOMViewController.swift in Sources */,
-				E9337C812547297F00BD8A2A /* VMAPViewController.swift in Sources */,
 				E93A3D20217A285F00F971F8 /* BCOVVideo+Helpers.swift in Sources */,
 				E93A3D0E217A1D5900F971F8 /* AppDelegate.swift in Sources */,
 				F1F08CA4269A61AE00F1A6F0 /* PlayerConfig.swift in Sources */,

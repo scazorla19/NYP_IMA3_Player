@@ -18,22 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7fR-Ks-Y2o">
-                                <rect key="frame" x="20" y="400" width="374" height="96"/>
+                                <rect key="frame" x="20" y="424" width="374" height="48"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-00-Kst">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTL-LH-Ei3">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Video 1"/>
+                                        <state key="normal" title="Play Video"/>
                                         <connections>
-                                            <segue destination="EWe-ZR-OzS" kind="show" id="y9C-9N-7oc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="276-Sq-GCW">
-                                        <rect key="frame" x="0.0" y="48" width="374" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Video 2"/>
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="1xR-u4-I9x"/>
+                                            <segue destination="EWe-ZR-OzS" kind="show" id="4id-U9-exm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -52,39 +44,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgt-cB-UXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="300" y="115.59220389805098"/>
-        </scene>
-        <!--VMAP-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" userLabel="VMAP" customClass="VMAPViewController" customModule="BasicIMAPlayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-vG-sBu" userLabel="videoContainer">
-                                <rect key="frame" x="0.0" y="88" width="414" height="233"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lwl-vG-sBu" secondAttribute="height" multiplier="16:9" id="Dzt-iV-OkP"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="lwl-vG-sBu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ltt-wQ-6RG"/>
-                            <constraint firstItem="lwl-vG-sBu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l8O-X2-VIx"/>
-                            <constraint firstItem="lwl-vG-sBu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vHw-A3-kQj"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="0zo-GJ-k5K"/>
-                    <connections>
-                        <outlet property="videoContainerView" destination="lwl-vG-sBu" id="Ay1-f1-laK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1076" y="-254"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Cb-FQ-sfj">
